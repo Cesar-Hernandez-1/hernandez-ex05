@@ -1,5 +1,5 @@
 /*
- *  UCF COP3330 Fall 2021 Assignment 5 Solution
+ *  UCF COP3330 Fall 2021 Assignment 1 Solution
  *  Copyright 2021 Cesar Hernandez
  */
 
@@ -7,11 +7,11 @@
  *  Delicaire scanner input object to receive input from user
  *  Ask user for first number and store input in "str1" string variable
  *  Ask user for second number and store input in "str2" string variable
- *  Convert "str1" and str2" into integers and store in "num1" and "num2" integer variables respectively
- *  Compute addition, subtraction, multiplication, and division of two numbers respectively and store results in
- *      respective int variables named "add", "sub", "mul", and "div" respectively
- *  Use printf() to display computations and work for each case on a separate line and format to use actual user entered
- *      variables
+ *  Convert "str1" and str2" into integers
+ *  Store input type conversions in "num1" and "num2" integer variables respectively
+ *  Compute addition, subtraction, multiplication, and division of two numbers respectively and convert and store
+ *      results in respective String variables named "add", "sub", "mul", and "div" respectively
+ *  Use printf() to display results and work for each case on a separate line
  *
  */
 package exercise05;
@@ -29,12 +29,12 @@ public class Solution05 {
         int num1 = Integer.parseInt(str1);
         int num2 = Integer.parseInt(str2);
 
-        int add = num1+num2;
-        int sub = num1-num2;
-        int mul = num1*num2;
-        int div = num1/num2;
+        String add = String.valueOf(num1+num2);
+        String sub = String.valueOf(num1-num2);
+        String mul = String.valueOf(num1*num2);
+        String div = String.valueOf(num1/num2);
 
-        System.out.printf("%d + %d = %d%n%d - %d = %d%n%d * %d = %d%n%d / %d = %d%n", num1,num2,add,num1,num2,sub,num1,num2,mul,num1,num2,div);
+        System.out.printf("%s + %s = %s%n%s - %s = %s%n%s * %s = %s%n%s / %s = %s%n", str1,str2,add,str1,str2,sub,str1,str2,mul,str1,str2,div);
 
     }
 }
